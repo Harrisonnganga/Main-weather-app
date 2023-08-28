@@ -1,0 +1,243 @@
+@import url('https://www.linotype.com/1308/din-1451-family.html'); 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #171717;
+  --clr-accent: #00FFFF;
+  --clr-shade:  #1e1e1e;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-h4: 0.5em;
+  --fs-body: 1rem;
+  --fs-p: 1.2em;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+*{
+font-family:  var(--ff-primary);
+}
+
+body{
+     background-image: url(image/cloud.png);
+     background-color: var(--clr-dark);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 500px
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.content {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    padding: var(--fs-h2);
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+.location-icon{
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+}
+.location-icon img{
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-image: url('path/to/location-icon.png');
+    background-position: center;
+    background-size: cover;
+    background-color: var(--clr-light);
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 auto;
+
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    border: none;
+    background: var(--clr-shade);
+    outline: none;
+    color: var(--clr-light);
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: var(--clr-light);
+}
+
+.search {
+    position: relative;
+}
+
+.search i {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    color: var(--clr-light);
+}
+
+.units {
+    font-size: var(--fs-h3);
+}
+
+.units span {
+    cursor: pointer;
+}
+
+.units span:first-child {
+    margin-right: var(--fs-h4);
+}
+
+.body {
+    text-align: center;
+    margin-top: var(--fs-h1);
+}
+
+.datetime {
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+
+.forecast {
+    background: var(--clr-shade);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+.icon img {
+    width: 100px;
+}
+
+.temperature {
+    font-size: 1.75rem;
+}
+
+.minmax {
+    display: flex;
+    justify-content: center;
+}
+
+.minmax p {
+    font-size: 14px;
+    margin: var(--fs-h4);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-top: var(--fs-h1);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background: var(--clr-shade);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card i {
+    font-size: 1.5rem;
+    margin-right: var(--fs-body);
+}
+
+.card p {
+    font-size: 14px;
+}
+.forecast-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--clr-light);
+    color:var(--clr-dark);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.forecast-button:hover {
+    background-color:var(--clr-accent);
+}
+
+.forecast-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.forecast-list {
+    list-style: none;
+    padding: 0;
+}
+
+.forecast-list li {
+    margin-bottom: 10px;
+}
+@media(max-width: 936px){
+    .content {
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .units {
+        margin-top: var(--fs-body);
+    }
+}
+
+
+@media(max-width: 400px){
+    .info {
+        grid-template-columns: none;
+    }
+}
+
+  

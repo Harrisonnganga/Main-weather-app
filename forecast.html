@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    
+<script src="https://kit.fontawesome.com/f9b43e10c8.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="forecast.css"></link>
+</head>
+<body>
+    <div id="search-container">
+        <input type="text" id="search-input">
+        <button id="search-button">Search</button>
+        <i class="fa-solid fa-location-arrow icon-arrow"></i>
+        <div id="Imperial-button">
+           <button id="metric-button">Metric:<span id="degreeC"></span> &deg;C, m/s</button>
+           <p id="imperial-p">Imperial: <span id="degreeF"></span>  &deg;F, mph </p>
+        </div>
+    </div>
+    <div id="navigate">
+        <div id="weatherData">
+            
+        </div>
+        <div id="map"></div>
+    </div>
+    <div id="forecast"></div>
+
+    </div>
+    <a href="index.html" style="background-color: blue; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Home</a>
+    <script src="forecast-script.js"></script>
+
+</body>
+</html>
